@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CineClub - Lista</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎬 CineClub</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="lista.html">Lista de Películas</a></li>
+        <li><a href="detalle.html">Detalle</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Listado de Películas</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Año</th>
+            <th>Categoría</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>El Padrino</td><td>1972</td><td>Drama</td></tr>
+          <tr><td>2</td><td>Interestelar</td><td>2014</td><td>Ciencia Ficción</td></tr>
+          <tr><td>3</td><td>Toy Story</td><td>1995</td><td>Animación</td></tr>
+          <tr><td>4</td><td>El Señor de los Anillos</td><td>2001</td><td>Fantasía</td></tr>
+          <tr><td>5</td><td>Parásitos</td><td>2019</td><td>Drama</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Sugerir una nueva película</h2>
+      <form>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+
+        <label for="anio">Año:</label>
+        <input type="number" id="anio" name="anio" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria">
+          <option>Drama</option>
+          <option>Ciencia Ficción</option>
+          <option>Animación</option>
+          <option>Fantasía</option>
+          <option>Acción</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 CineClub - Tarea de Programación</p>
+  </footer>
+
+</body>
+</html>
